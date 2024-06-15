@@ -1,0 +1,100 @@
+.scheduleContainer {
+  display: flex;
+  flex-direction: column;
+  width: 700px;
+  margin: 0 auto;
+  user-select: none;
+}
+
+.hoursRow {
+  display: flex;
+}
+
+.hourLabel {
+  flex: 3;
+  height: 50px;
+  box-sizing: border-box;
+  position: relative;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding-left: 2px;
+}
+
+.hourLabel:first-of-type {
+  align-items: center;
+}
+
+.hourLabel::before {
+  content: "";
+  position: absolute;
+  height: 10px;
+  left: -1px;
+  bottom: 0;
+  width: 1px;
+  background-color: var(--all-day-color);
+}
+
+.hourLabel:first-of-type {
+  flex: 2;
+}
+
+.hourLabel:nth-of-type(2) {
+  flex: 2;
+  margin-left: -3px;
+}
+
+.hourLabel:first-of-type::before,
+.hourLabel:nth-of-type(2)::before {
+  display: none;
+}
+
+.dayRow {
+  display: flex;
+  margin-bottom: -1px;
+}
+
+.controls {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 20px;
+  gap: 20px;
+}
+
+.controls button {
+  padding: 8px 20px;
+  color: white;
+  background-color: var(--all-day-color);
+  border: 0px;
+  outline: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.controls button:hover {
+  background-color: var(--text-color);
+}
+
+.controls button:active {
+  background-color: var(--button-click);
+}
+
+.controls button[disabled] {
+  opacity: 0.5;
+}
+
+.controls button:hover[disabled] {
+  background-color: var(--all-day-color);
+}
+
+.controls button:active[disabled] {
+  background-color: var(--all-day-color);
+}
+
+.scheduleContainer h1 {
+  margin-bottom: 20px;
+  margin-top: 40px;
+  font-size: 24px;
+}

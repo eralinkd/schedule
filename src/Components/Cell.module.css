@@ -1,0 +1,36 @@
+.cell {
+  flex: 1;
+  height: 60px;
+  border: 1px solid var(--border-color);
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: var(--unselected-color);
+  margin-left: -1px;
+}
+
+.big {
+  flex: 2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.cell.selected {
+  background-color: var(--selected-color);
+}
+
+.allDay {
+  background-color: var(--all-day-color);
+}
+
+.allDay.selected {
+  background-color: var(--all-day-color);
+  background-image: url(../Images/icon.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 40%;
+}
+
+.day {
+  cursor: default;
+}
