@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/schedule/static/css/main.917d92d3.css",
+    "main.js": "/schedule/static/js/main.5148d3a2.js",
+    "static/media/icon.png": "/schedule/static/media/icon.bbe59128e69700e49037.png",
+    "index.html": "/schedule/index.html",
+    "main.917d92d3.css.map": "/schedule/static/css/main.917d92d3.css.map",
+    "main.5148d3a2.js.map": "/schedule/static/js/main.5148d3a2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.917d92d3.css",
+    "static/js/main.5148d3a2.js"
+  ]
+}
